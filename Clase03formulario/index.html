@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📄Formulario</title>
+  </head>
+  <body>
+    <h1><strong>Registro para maratón</strong></h1>
+    <form>
+      <fieldset>
+        <legend><h3>Datos personales</h3></legend>
+        <br />
+        <label for=" nombre "><b>Ingrese su nombre</b></label>
+        <input type="text" id="ingrese su nombre" name="nombre" /><br /><br />
+        <label for="apellido"><b>Ingrese su apellido</b></label>
+        <input  type="text" id="ingrese su apellido" name="apellido" /><br /><br />
+        <label for="email"><b>Ingrese su email</b></label>
+        <input type="email" id="ingrese su email" name=" email" /><br /><br />
+        <label for=" fecha de nacimiento"><b>Ingrese fecha de nacimiento<</b></label>
+        <input type="date"id="ingrese fecha de nacimiento" name="fecha de nacimiento"/><br /><br />
+        <label for="ficha medica (PDF)"><b>Ficha médica (PDF)</b></label>
+        <input type="file" id="ficha medica (PDF)" name="ficha medica (PDF)" /><br /><br />
+      </fieldset>
+      <fieldset>
+        <legend><h3>Carrera</h3></legend>
+        <h3>Seleccionar maratón:</h3>
+        <ul>
+          <li><input type="radio" name="2 km" value="2 km" /><b>2 km</b></li>
+          <li><input type="radio" name="5 km" value="5 km" /><b>5 km</b></li>
+          <li><input type="radio" name="10 km" value="10 km" /><b>10 km</b></li>
+        </ul>
+        <label for="marca de remera "><strong>Seleccionar marca remera</strong></label>
+        <select name="marca" id="marca">
+          <option value="N">Nike</option>
+          <option value="A">Adidas</option>
+          <option value="P">Puma</option>
+        </select>
+        <h3>Seleccionar días disponibles</h3>
+          <li><label for="lunes"><b>Lunes</b></label>
+          <input type="checkbox" name="lunes" id="lunes"></li>
+
+          <li><label for="miercoles"><b>miercoles</b></label>
+        <input type="checkbox" name="miercoles" id="miercoles"></li>
+          <li> <label for="viernes"><b>viernes</b></label>
+        <input type="checkbox" name="viernes" id="viernes"></li>
+        </ul><br>
+      </fieldset><br>
+      <button type="submit"><b>Enviar</b></button>
+    </form>
+  </body>
+</html>
